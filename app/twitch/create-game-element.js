@@ -9,14 +9,14 @@ export default function createGameElement(data) {
   <img class="game-item__pic" src ="" alt=""></img>`;
 
   const title = item.querySelector('.game-item__name');
-  title.innerText = data.game;
+  title.innerText = data.name;
 
   const popularity = item.querySelector('.game-item__popularity');
   popularity.innerText = data.popularity;
 
   const pic = item.querySelector('.game-item__pic');
   pic.src = data.box.large;
-  pic.alt = data.game;
+  pic.alt = data.name;
 
   return item;
 }
